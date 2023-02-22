@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Lexend+Deca&family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --dark-blue-card: hsl(216, 50%, 16%);
+    --dark-blue-main: hsl(217, 54%, 11%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--dark-blue-main);
+    display: flex;
+}
+
+.container {
+    max-width: 425px;
+    margin: auto;
+    display: flex;
+}
+
+.wrapper {
+    margin: 1rem 1rem;
+    padding: 20px;
+    background-color: var(--dark-blue-card);
+    box-shadow: 0px 0px 30px 5px rgba(26, 17, 17, 0.76);
+    border-radius: 20px;
+    width: 350px;
+}
+
+.img-top {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-top img {
+    width: 100%;
+    display: block;
+}
+
+.img-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.466); ;
+    display:none;
+}
+
+.img-overlay img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-top:hover .img-overlay {
+    display: block;
+    cursor: pointer;
+}
+
+.box-text a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 20px 0px;
+    display: inline-block;
+}
+
+.box-text p {
+    color: var(--soft-blue);
+    font-size: 16px;
+}
+
+.flex  {
+    display: flex;
+    padding: 25px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eth, .days {
+    display: flex;
+    align-items: center;
+
+}
+
+.eth p {
+    color: var(--cyan);
+    font-weight: 600;
+    padding-left: 9px;
+    font-size: 18px;
+}
+
+.days p {
+    padding-left: 9px;
+}
+
+hr {
+    border-color: var(--soft-blue)
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    justify-content: left;
+}
+
+.autor img {
+    width: 35px;
+    height: 35px; 
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+
+}
+
+.autor a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.autor p {
+    padding-left: 15px;
+}
+
+.box-text a:hover {
+    color: var(--cyan);
+}
+/* <style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style> */
+
